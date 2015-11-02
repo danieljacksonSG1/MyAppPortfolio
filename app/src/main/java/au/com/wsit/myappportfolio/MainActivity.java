@@ -53,7 +53,7 @@ public class MainActivity extends ActionBarActivity
     {
         @Override
         public void onClick(View v) {
-            Toast.makeText(MainActivity.this, "Launching the Spotify Streamer App", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, getString(R.string.launch_spotify), Toast.LENGTH_LONG).show();
         }
     };
 
@@ -61,44 +61,44 @@ public class MainActivity extends ActionBarActivity
     View.OnClickListener scoresAppListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Toast.makeText(MainActivity.this, "Launching the Scores App", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, getString(R.string.launch_scores), Toast.LENGTH_LONG).show();
         }
     };
 
     View.OnClickListener libraryAppListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Toast.makeText(MainActivity.this, "Launching the Library App", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, getString(R.string.launch_library), Toast.LENGTH_LONG).show();
         }
     };
 
     View.OnClickListener buildItBiggerAppListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Toast.makeText(MainActivity.this, "Launching Build It Bigger", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, getString(R.string.launch_build_it_bigger), Toast.LENGTH_LONG).show();
         }
     };
 
     View.OnClickListener XYZListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Toast.makeText(MainActivity.this, "Launching XYZ Reader", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, getString(R.string.launch_xyz), Toast.LENGTH_LONG).show();
         }
     };
 
     View.OnClickListener capstoneListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Toast.makeText(MainActivity.this, "Launching my Capstone App", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, getString(R.string.launch_capstone), Toast.LENGTH_LONG).show();
         }
     };
 
     public void displayAbout()
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("By Guy Bridge")
+        builder.setMessage(getString(R.string.guy_bridge))
                 .setPositiveButton(android.R.string.ok, null)
-                .setTitle("About");
+                .setTitle(getString(R.string.about_title));
 
         AlertDialog dialog = builder.create();
         dialog.show();
