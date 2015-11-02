@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+                android:background="@android:color/darker_gray">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/my_nanodegree_apps"
+        android:id="@+id/myNanoDegreeAppsTextView"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:text="@string/spotify_streamer"
+        android:id="@+id/spotifyStreamerButton"
+        style="@style/buttonStyleMain"/>
+
+    <Button
+        android:text="@string/scores_app"
+        android:id="@+id/scoresAppButton"
+        style="@style/buttonStyleMain"/>
+
+    <Button
+        style="@style/buttonStyleMain"
+        android:text="@string/library_app"
+        android:id="@+id/libraryAppButton" />
+
+    <Button
+        style="@style/buttonStyleMain"
+        android:text="@string/build_it_bigger"
+        android:id="@+id/buildItBiggerButton" />
+
+    <Button
+        style="@style/buttonStyleMain"
+        android:text="@string/xyz_reader"
+        android:id="@+id/xyzReaderButton" />
+
+    <Button
+        style="@style/buttonStyleMain"
+        android:text="@string/my_own_app"
+        android:id="@+id/capstoneButton" />
+</LinearLayout>
